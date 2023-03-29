@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar un algoritmo que permita ingresar tu nombre y el año de nacimiento; e imprimas tu nombre y el cálculo de tu edad.
+            Console.WriteLine("Ingrese su nombre: ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese su año de Nacimiento: ");
+            int fecha = int.Parse(Console.ReadLine());
+            int edad = 2023 - fecha;
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("Nombre: " + nombre);
+            Console.WriteLine("Edad: " + edad);
+
+            Console.ReadLine(); 
+        }
+    }
+}
