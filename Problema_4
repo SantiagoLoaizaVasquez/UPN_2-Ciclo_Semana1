@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Realizar el algoritmo que permita realizar el tipo de cambio de soles a dólares(Sabiendo que 1 dólar = 3.78 soles)//
+            Console.WriteLine("1$ equivale a S/.3.78 ");
+            Console.WriteLine("Ingrese el monto de soles que planea ingresar: ");
+            double monto = double.Parse(Console.ReadLine());
+            double dolar = (monto * 3.78);
+            Console.WriteLine("El monto cambiado es de :"+dolar+"$");
+            Console.ReadLine();
+        }
+    }
+}
