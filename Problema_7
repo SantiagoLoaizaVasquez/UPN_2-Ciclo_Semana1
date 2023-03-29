@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Realizar el algoritmo que me permite transformar horas a minutos.//
+            Console.WriteLine("Ingrese la cantidad de horas que desee: ");
+            int horas = int.Parse(Console.ReadLine());
+            int minutos = horas * 60;
+            Console.WriteLine("----------Convirtiendo en minutos----------");
+            Console.WriteLine("La cantidad de minutos es de: " + minutos);
+        }
+    }
+}
