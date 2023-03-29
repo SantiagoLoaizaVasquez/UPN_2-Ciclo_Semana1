@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //A un empleado le incrementaron el sueldo a un 25%. Realizar el algoritmo que permite ingresar el sueldo y calcular el incremento de su sueldo.
+            Console.WriteLine("Ingrese el sueldo base: ");
+            double sueldo = Double.Parse(Console.ReadLine());
+            double aumento = sueldo * 1 / 4;
+            double sueldo_aumentado = sueldo + aumento;
+            Console.WriteLine("El incremento es de " + aumento + " soles, y el sueldo con el aumento es de " + sueldo_aumentado);
+        }
+    }
+}
