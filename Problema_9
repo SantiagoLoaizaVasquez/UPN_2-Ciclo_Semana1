@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Se pide el algoritmo para realizar la transformación de kilómetros a:
+            //• Metros.
+            //• Pulgadas.
+            //• Pies.
+            //Sabiendo que 1 km = 1000 metros / 3280 pies / 39370 pulgadas.
+
+              
+            Console.WriteLine("Ingrese la cantidad de kilometros: ");
+            int km = int.Parse(Console.ReadLine());
+            int metros = 1000 * km;
+            int pies = 3280 * km;
+            int pulgadas = 39370 * km;
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("ELIGE UNA OPCIÓN: ");
+            Console.WriteLine("1.Metros ");
+            Console.WriteLine("2.Pies ");
+            Console.WriteLine("3.Pulgadas ");
+            Console.WriteLine("------------------------------------");
+            int op = int.Parse(Console.ReadLine());
+            Console.WriteLine("------------------------------------");
+
+            switch (op)
+            {
+                case 1: Console.WriteLine("Son " + metros + " metros");
+                    break;
+
+                case 2: Console.WriteLine("Son " + pies + " pies");
+                    break;
+                    
+                case 3: Console.WriteLine("Son " + pulgadas + " pulgadas");
+                    break; 
+                    
+            }
+            Console.ReadLine();
+        }
+    }
+}
