@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo para determinar el área de un rombo. A = (D * d) / 2 
+            //Donde D = Lado mayor
+            //Donde d = Lado menor.
+
+            int A, D, d ;
+            Console.WriteLine("Ingrese el lado mayor: ");
+            D = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese el lado menor: ");
+            d = Convert.ToInt32(Console.ReadLine());
+            A = (D * d) / 2;
+            Console.WriteLine("El área el rombo es: " + A);
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
