@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Problema_8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Desarrollar el algoritmo que te permita ingresar un sueldo ficticio y calcular lo siguiente:
+            //• Sueldo de María disminuyeron el 5% de inasistencias y le descontaron 25.
+            //• Sueldo de Juan le incrementaron 23% por comisiones más 72 de horasextra.
+            //• Sueldo de Patricio le incrementaron un 5% pero le descontaron 56.
+            //Se pide mostrar el sueldo de cada empelado y la suma de sus sueldos
+
+            Console.WriteLine("Ingrese el sueldo de María: ");
+            int maria =int.Parse(Console.ReadLine());
+            int mariafin =(maria *95/100)-25;
+            Console.WriteLine("El sueldo de María es de: " + mariafin );
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Ingrese el sueldo de Juan: ");
+            int juan = int.Parse(Console.ReadLine());
+            int juanfin = (juan * 123 / 100) + 72;
+            Console.WriteLine("El sueldo de Juan es de: " + juanfin);
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("Ingrese el sueldo de Patricio: ");
+            int patricio = int.Parse(Console.ReadLine());
+            int patriciofin = (patricio * 105 / 100) - 56;
+            Console.WriteLine("El sueldo de Patricio es de: " + patriciofin);
+            Console.WriteLine("------------------------------------------");
+            int suma = mariafin + juanfin + patriciofin;
+            Console.WriteLine("La suma de sus sueldos es de: " +suma);
+
+        }
+    }
+}
